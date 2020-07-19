@@ -1,25 +1,26 @@
 # GraphQLCOREWEBAPI
-# DOTNETCORE
-# DOTNETCORE3.1GRAPHQL
-# GRAPHQLDOTNETCORE
-# GRAPHQLSQLSERVERCONNECTIONSTRINGDOTNETCORE
-# RepositoryDOTNETCORE
+## DOTNETCORE
+## DOTNETCORE3.1GRAPHQL
+## GRAPHQLDOTNETCORE
+## GRAPHQLSQLSERVERCONNECTIONSTRINGDOTNETCORE
+## RepositoryDOTNETCORE
 
-Prerequisite
+## Prerequisite
 
-VS2019 - 16.6.4
-CORE   - 3.1
+### VS2019 - 16.6.4
+### CORE   - 3.1
 
-3 simple steps to run this program
+## 3 simple steps to run this program
 
-1.Clone code
-2.ctrl + f5 to run this program
-3.in browser ~/graphql and verify with below query schema
+1. Clone code
+2. ctrl + f5 to run this program
+3. in browser ~/graphql and verify with below query schema
 
 
 
-To view all schema
+### To view all schema
 
+```
 {
   __schema {
     types {
@@ -28,10 +29,13 @@ To view all schema
   }
 }
 
-verify SQL todo get / get all
+```
 
-GET ALL
+### verify SQL todo get / get all
 
+### GET ALL
+
+```
 query {
   todos{
     id
@@ -39,10 +43,11 @@ query {
     IsComplete
   }
 }
+```
 
+### GET
 
-GET
-
+```
 query {
   todo(id :1){
     id
@@ -50,8 +55,11 @@ query {
   }
 }
 
-Static json 
+```
 
+### Static json 
+
+```
 query {
   author (id: 1){
     id
@@ -66,7 +74,9 @@ query {
     }
 }
 
+```
 
+```
 query {
   authors{
     id
@@ -74,5 +84,5 @@ query {
     lastName
   }
 }
-
+```
 
